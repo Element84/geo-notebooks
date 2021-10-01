@@ -1,0 +1,15 @@
+# Copyright ©2021. Element 84, Inc. All Rights Reserved.
+version:                "3"
+services:
+  geonotebook:
+      build: .
+      image: matthewhanson/geo-notebook 
+      env_file: .env
+      volumes:
+        - ./:/home/jovyan/work
+      ports:
+        - 8888:8888
+        - 8787:8787
+      entrypoint: jupyter notebook --allow-root --no-browser --ip=0.0.0.0
+
+
