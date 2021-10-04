@@ -30,8 +30,8 @@ $ docker compose build
 ```
 
 Create a .env file and provide the following environment variables:
-- AWS_ACCESS_KEY_ID=<your id>
-- AWS_SECRET_ACCESS_KEY=<your secret key>
+- AWS_ACCESS_KEY_ID="your id"
+- AWS_SECRET_ACCESS_KEY="your secret key"
 - AWS_REQUESTER_PAYS=requester
 
 
