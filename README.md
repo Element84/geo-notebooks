@@ -23,19 +23,26 @@ to get started when running local notebooks and for tracking costs.
 
 ## Docker Usage
 
-First build the Docker container
+First, create a .env file in the root directory of this repository and provide the following environment variables:
+
+- AWS_ACCESS_KEY_ID="your id"
+- AWS_SECRET_ACCESS_KEY="your secret key"
+- AWS_REQUEST_PAYER=requester
+
+If you are using temporary credentials, you also need to set:
+
+- AWS_SESSION_TOKEN="your session token"
+
+**Note**: Only some notebooks, e.g. [notebooks/odc-landsat.ipynb](notebooks/odc-landsat.ipynb), require AWS credentials.
+If you are only running notebooks that do NOT require AWS credentials (e.g. [notebooks/odc-planetary-computer.ipynb](notebooks/odc-planetary-computer.ipynb)), you can simply create an empty `.env` file.
+
+Then build the Docker container:
 
 ```
 $ docker compose build
 ```
 
-Create a .env file and provide the following environment variables:
-- AWS_ACCESS_KEY_ID="your id"
-- AWS_SECRET_ACCESS_KEY="your secret key"
-- AWS_REQUESTER_PAYS=requester
-
-
-Then run using Docker compose
+Then run using Docker compose:
 
 ```
 $ docker compose up
