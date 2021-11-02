@@ -39,13 +39,13 @@ If you are only running notebooks that do NOT require AWS credentials (e.g. [not
 Then build the Docker container:
 
 ```
-$ docker compose build
+$ docker-compose build
 ```
 
 Then run using Docker compose:
 
 ```
-$ docker compose up
+$ docker-compose up
 ```
 
 After starting up the container it will print a local URL that can be copy and pasted into a browser.
