@@ -8,8 +8,6 @@ services:
       volumes:
         - ./:/home/jovyan/work
       ports:
-        - 8888:8888
-        - 8787:8787
-      entrypoint: jupyter notebook --allow-root --no-browser --ip=0.0.0.0
-
-
+        - 18888:18888
+      entrypoint: |
+        jupyter notebook --notebook-dir=work/notebooks --no-browser --ip=0.0.0.0 --port=18888
