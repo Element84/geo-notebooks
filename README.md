@@ -1,6 +1,7 @@
 # Geospatial Python Notebooks
 
-[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/https://github.com/rsignell-usgs/geo-notebooks/blob/main/notebooks/odc-landsat.ipynb)
+
+
 This repository contains example Jupyter notebooks for working with STAC, OpenDataCube, and Dask. 
 
 The [ODC Planetary Computer](notebooks/odc-planetary-computer.ipynb) and the 
@@ -51,6 +52,8 @@ $ docker-compose up
 
 After starting up the container it will print a local URL that can be copy and pasted into a browser.
 
+## Launch in SageMaker Studio Lab
+[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/https://github.com/rsignell-usgs/geo-notebooks/blob/main/notebooks/odc-landsat.ipynb)
 ## About
 
 The notebooks in this repository were created by [Element 84](http://element84.com/).
