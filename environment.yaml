@@ -1,25 +1,29 @@
+name: odc
+channels:
+  - conda-forge
 dependencies:
   # Pin these as current cartopy struggles with shapely 1.8+
-  - cartopy==0.20.1
-  - shapely==1.7.1
-  - geopandas==0.10.2
-
-  - datacube==1.8.6
-  - pystac==1.1.0
-  - pystac-client==0.3.0
+  - python=3.9
+  - cartopy
+  - shapely
+  - geopandas
+  - datacube
+  - pystac
+  - pystac-client
   - odc-stac
   - coiled
   - stackstac
   - rasterio
   - rioxarray
   - planetary-computer
-  - geoviews
   - dask-image
   - dask-labextension
   - hvplot
-
+  - ipykernel
+  - geoviews
+  - datashader
   - jupyter-server-proxy
   - pip
   - pip:
-      - odc-algo
       - geogif
+      - odc-algo
