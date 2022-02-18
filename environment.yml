@@ -1,0 +1,26 @@
+name: odc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9   # hvplot issues with 3.10
+  - ipykernel
+  - cartopy
+  - shapely
+  - geopandas
+  - geogif
+  - datacube
+  - pystac
+  - pystac-client
+  - odc-algo
+  - odc-stac
+  - coiled
+  - stackstac
+  - rasterio
+  - rioxarray
+  - planetary-computer
+  - dask-image
+  - dask-labextension
+  - hvplot
+  - geoviews
+  - datashader
+  - jupyter-server-proxy
