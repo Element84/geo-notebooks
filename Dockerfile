@@ -5,8 +5,8 @@ LABEL maintainer="Matthew Hanson <matt.a.hanson@gmail.com>"
 
 USER ${NB_UID}
 
-COPY environment.yaml /opt/conda/environment.yaml
-RUN mamba env update -p /opt/conda --file /opt/conda/environment.yaml \
+COPY environment.yaml /opt/conda/environment.yml
+RUN mamba env update -p /opt/conda --file /opt/conda/environment.yml \
     && mamba clean --all -f -y
 
 COPY dask.yaml /home/jovyan/.config/dask/dask.yaml
