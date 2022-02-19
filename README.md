@@ -50,6 +50,10 @@ $ docker-compose up
 
 After starting up the container it will print a local URL that can be copy and pasted into a browser.
 
+## Launch in SageMaker Studio Lab
+If you have an AWS SageMaker Studio Lab account, you can open in Studio Lab using the button below, then when prompted, choose to download the whole repo and to build the conda environment.   If you don't have an account, you can sign up for free at https://studiolab.sagemaker.aws/ (no AWS account required).
+
+[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/https://github.com/rsignell-usgs/geo-notebooks/blob/main/notebooks/odc-landsat.ipynb)
 ## About
 
 The notebooks in this repository were created by [Element 84](http://element84.com/).

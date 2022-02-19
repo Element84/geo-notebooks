@@ -2,14 +2,16 @@ name: odc
 channels:
   - conda-forge
 dependencies:
-  # Pin these as current cartopy struggles with shapely 1.8+
-  - python=3.9
+  - python=3.9   # hvplot issues with 3.10
+  - ipykernel
   - cartopy
   - shapely
   - geopandas
+  - geogif
   - datacube
   - pystac
   - pystac-client
+  - odc-algo
   - odc-stac
   - coiled
   - stackstac
@@ -19,11 +21,6 @@ dependencies:
   - dask-image
   - dask-labextension
   - hvplot
-  - ipykernel
   - geoviews
   - datashader
   - jupyter-server-proxy
-  - pip
-  - pip:
-      - geogif
-      - odc-algo
