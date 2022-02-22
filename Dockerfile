@@ -5,7 +5,7 @@ LABEL maintainer="Matthew Hanson <matt.a.hanson@gmail.com>"
 
 USER ${NB_UID}
 
-COPY environment.yaml /opt/conda/environment.yml
+COPY environment.yml /opt/conda/environment.yml
 RUN mamba env update -p /opt/conda --file /opt/conda/environment.yml \
     && mamba clean --all -f -y
 
