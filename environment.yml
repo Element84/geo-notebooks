@@ -2,7 +2,7 @@ name: odc
 channels:
   - conda-forge
 dependencies:
-  - python=3.9   # hvplot issues with 3.10
+  - python
   - ipykernel
   - cartopy
   - shapely
@@ -11,8 +11,7 @@ dependencies:
   - datacube
   - pystac
   - pystac-client
-  - odc-algo
-  - odc-stac
+  - odc-stac >= 0.3.1
   - coiled
   - stackstac
   - rasterio
