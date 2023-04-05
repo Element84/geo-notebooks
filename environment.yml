@@ -9,7 +9,7 @@ dependencies:
   - geopandas
   - geogif
   - datacube
-  - pystac
+  - pystac < 1.7 # avoid the projection extension version bump, which breaks odc-stac loading: https://github.com/opendatacube/odc-stac/issues/105
   - pystac-client
   - odc-stac >= 0.3.1
   - coiled
